@@ -1,0 +1,7 @@
+name: data_has_power
+channels:
+  - conda
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pyspark=3.2.1

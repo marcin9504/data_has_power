@@ -1,0 +1,9 @@
+CREATE USER 'spark'@'localhost' IDENTIFIED BY 'spark';
+
+GRANT ALL PRIVILEGES ON *.* TO 'spark'@'localhost' WITH GRANT OPTION;
+
+CREATE USER 'spark'@'%' IDENTIFIED BY 'spark';
+
+GRANT ALL PRIVILEGES ON *.* TO 'spark'@'%' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
